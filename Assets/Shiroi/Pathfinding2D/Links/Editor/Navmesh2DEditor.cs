@@ -24,7 +24,7 @@ namespace Shiroi.Pathfinding2D.Links.Editor {
                     var node = navmesh.GetNode(x, y);
                     var tile = tilemap.GetTile(new Vector3Int(x, y, 0));
                     foreach (var generator in linkGenerators) {
-                        foreach (var link in generator.Generate(x, y, node, tile, tilemap)) {
+                        foreach (var link in generator.Generate(x, y, node, navmesh, tile)) {
                             if (link == null) {
                                 continue;
                             }

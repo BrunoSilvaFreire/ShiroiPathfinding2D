@@ -49,6 +49,20 @@ namespace Shiroi.Pathfinding2D {
             }
         }
 
+        public float BoxcastDownsize = 0.1F;
+
+        public Vector2 BoxcastSize {
+            get {
+                var downscale = (1 - BoxcastDownsize);
+                var size = Tilemap.cellSize;
+                size.x *= downscale;
+                size.y *= downscale;
+                return size;
+            }
+        }
+
+        public LayerMask LayerMask;
+
         private Node[] nodes;
 
         private void Reset() {
@@ -70,7 +84,7 @@ namespace Shiroi.Pathfinding2D {
             }
         }
 
-        private bool IsOutOfBounds(int index) {
+        public bool IsOutOfBounds(int index) {
             if (nodes == null) {
                 return true;
             }
@@ -78,8 +92,16 @@ namespace Shiroi.Pathfinding2D {
             return index >= nodes.Length || index < 0;
         }
 
-        private int IndexOf(int x, int y) {
+        public int IndexOf(int x, int y) {
             return y * Width + x;
+        }
+
+        public int IndexOf(Vector2Int pos) {
+            return IndexOf(pos.x, pos.y);
+        }
+
+        public int IndexOf(Vector3Int pos) {
+            return IndexOf(pos.x, pos.y);
         }
     }
 }

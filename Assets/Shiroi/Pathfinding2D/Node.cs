@@ -6,9 +6,27 @@ using UnityEngine;
 
 namespace Shiroi.Pathfinding2D {
     [Serializable]
-    public class Node : ISerializationCallbackReceiver {
+    public sealed class Node : ISerializationCallbackReceiver {
         private List<Link> links;
         private SerializedLink[] serializedLinks;
+
+        public IEnumerable<Link> Links {
+            get {
+                return links;
+            }
+        }
+
+        public void AddLink(Link link) {
+            links.Add(link);
+        }
+
+        public void AddLinks(IEnumerable<Link> newLinks) {
+            this.links.AddRange(newLinks);
+        }
+
+        public void ClearLinks() {
+            links.Clear();
+        }
 
         public void OnBeforeSerialize() {
             serializedLinks = new SerializedLink[links.Count];
@@ -25,6 +43,7 @@ namespace Shiroi.Pathfinding2D {
                 if (created == null) {
                     continue;
                 }
+
                 links.Add(created);
             }
         }
