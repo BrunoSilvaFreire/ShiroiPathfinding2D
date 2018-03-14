@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiroiPathfinding2D", "ShiroiPathfinding2D\ShiroiPathfinding2D.csproj", "{EDFE995B-4D77-43DE-90E0-6DBDC5B45A12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShiroiPathfinding2D-Editor", "ShiroiPathfinding2D-Editor\ShiroiPathfinding2D-Editor.csproj", "{A7099F49-61A3-4289-B643-882DE66E8248}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EDFE995B-4D77-43DE-90E0-6DBDC5B45A12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDFE995B-4D77-43DE-90E0-6DBDC5B45A12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDFE995B-4D77-43DE-90E0-6DBDC5B45A12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDFE995B-4D77-43DE-90E0-6DBDC5B45A12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7099F49-61A3-4289-B643-882DE66E8248}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7099F49-61A3-4289-B643-882DE66E8248}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7099F49-61A3-4289-B643-882DE66E8248}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7099F49-61A3-4289-B643-882DE66E8248}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
