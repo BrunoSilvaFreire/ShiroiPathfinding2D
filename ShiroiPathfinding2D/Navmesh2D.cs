@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ShiroiPathfinding2D {
+namespace Shiroi.Pathfinding2D {
     public class Navmesh2D : MonoBehaviour {
         
     }

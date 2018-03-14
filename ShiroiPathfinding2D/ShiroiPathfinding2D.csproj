@@ -39,6 +39,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="IGroundEntity.cs" />
+    <Compile Include="Links\ILink.cs" />
     <Compile Include="Navmesh2D.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

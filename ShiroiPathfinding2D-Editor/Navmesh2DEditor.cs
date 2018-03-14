@@ -1,5 +1,4 @@
-﻿using ShiroiPathfinding2D;
-using UnityEditor;
+﻿using UnityEditor;
 
 namespace Shiroi.Pathfinding2D.Editor {
     [CustomEditor(typeof(Navmesh2D))]
